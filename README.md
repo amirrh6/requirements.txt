@@ -56,14 +56,14 @@ If you don't want to switch to modern solutions like poetry, Pipfile (pip-env) a
 
 * `pip-chill > requirements.txt`
     * Pros:
-        * Outputs only directly installed packages (without their dependencies).
+        * Outputs only manually installed packages (without their dependencies).
     * Cons:
         * Just like pip, outputs an absolute path for packages installed directly via file urls (Relative path is preferred).
         * pip_chill package should be manually installed via pip.
 
 * `pip-chill -v > requirements.txt`
     * Pros:
-        * Outputs only directly installed packages. Their dependencies are printed as comments.
+        * Outputs only manually installed packages. Their dependencies are printed as comments.
     * Cons:
         * Just like pip, outputs an absolute path for packages installed directly via file urls (Relative path is preferred).
         * pip_chill package should be manually installed via pip.
