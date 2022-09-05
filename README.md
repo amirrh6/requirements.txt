@@ -1,6 +1,8 @@
 # Intro
 
-Some personally suggested practices for dependency management using requirements.txt file. PRs, issues are welcome!
+Some personally suggested practices for dependency management using requirements.txt file.
+
+PRs and issues are welcome!
 
 # The story
 
@@ -26,7 +28,7 @@ In other words, poetry uses pyproject.toml to replace setup.py, requirements.txt
 
 If you don't want to switch to modern solutions like poetry, Pipfile (pip-env) and ..., here are some suggested practices for dependency management using requirements.txt file:
 
-### Suggested methods for updating requirements.txt file:
+### Suggested methods for updating requirements.txt file
 
 * `pip freeze > requirements.txt`
     * Pros:
@@ -67,3 +69,11 @@ If you don't want to switch to modern solutions like poetry, Pipfile (pip-env) a
     * Cons:
         * Just like pip, outputs an absolute path for packages installed directly via file urls (Relative path is preferred).
         * pip_chill package should be manually installed via pip.
+
+### Updating a primary dependency (used in your source code), with / without affecting the package's dependencies
+...
+
+### Semantic versioning
+...
+
+### ...
